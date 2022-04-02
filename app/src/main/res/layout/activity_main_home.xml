@@ -9,12 +9,12 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="230dp"
-        android:layout_height="88dp"
+        android:layout_width="145dp"
+        android:layout_height="65dp"
         android:layout_marginTop="304dp"
         android:onClick="nextpage"
         android:text="Convert"
-        android:textSize="40sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -27,7 +27,7 @@
         android:layout_height="74dp"
         android:text="Welcome to "
         android:textColor="#ECECEC"
-        android:textSize="60sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.161"
@@ -37,15 +37,15 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="396dp"
-        android:layout_height="431dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="400dp"
+        android:layout_height="306dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/kisspng_statistics_management_organization_sales_clip_art_5aeac22725c474_1548991015253345671547" />
 
     <TextView
@@ -54,7 +54,7 @@
         android:layout_height="102dp"
         android:text="LiraRate"
         android:textColor="#F8F5F5"
-        android:textSize="80sp"
+        android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.088"
