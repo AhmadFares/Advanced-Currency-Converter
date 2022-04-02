@@ -58,6 +58,14 @@
         tools:layout_editor_absoluteX="-151dp"
         tools:layout_editor_absoluteY="-32dp" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="599dp"
+        android:layout_height="307dp"
+        app:srcCompat="@drawable/kisspng_statistics_management_organization_sales_clip_art_5aeac22725c474_1548991015253345671547"
+        tools:layout_editor_absoluteX="-143dp"
+        tools:layout_editor_absoluteY="506dp" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
