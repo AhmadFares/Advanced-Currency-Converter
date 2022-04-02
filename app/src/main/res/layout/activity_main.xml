@@ -4,19 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="1117dp"
-        android:layout_height="929dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.32"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787"
-        app:srcCompat="@drawable/image1" />
 
     <Button
         android:id="@+id/button"
@@ -46,8 +35,8 @@
 
     <EditText
         android:id="@+id/editTextNumberDecimal"
-        android:layout_width="194dp"
-        android:layout_height="48dp"
+        android:layout_width="217dp"
+        android:layout_height="57dp"
         android:background="@android:drawable/editbox_dropdown_light_frame"
         android:ems="10"
         android:hint="Enter amount "
@@ -61,27 +50,22 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="67dp"
-        android:layout_height="93dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image3" />
+        android:id="@+id/imageView"
+        android:layout_width="599dp"
+        android:layout_height="307dp"
+        android:rotationX="-178"
+        app:srcCompat="@drawable/kisspng_statistics_management_organization_sales_clip_art_5aeac22725c474_1548991015253345671547"
+        tools:layout_editor_absoluteX="-151dp"
+        tools:layout_editor_absoluteY="-32dp" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="67dp"
-        android:layout_height="93dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.991"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image3" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the amount"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="267dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,7 +13,7 @@ public class MainActivity_Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_home);
     }
-    public void gotopage2 (View view)
+    public void nextpage (View view)
     {
         Intent obj = new Intent(getApplicationContext() , MainActivity.class);
         startActivity(obj);
