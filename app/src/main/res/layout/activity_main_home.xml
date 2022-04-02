@@ -7,6 +7,20 @@
     android:background="#000000"
     tools:context=".MainActivity_Home">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="532dp"
+        android:layout_height="118dp"
+        android:text="Welcome to "
+        android:textColor="#ECECEC"
+        android:textSize="80"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
+
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="839dp"
@@ -19,4 +33,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/kisspng_statistics_management_organization_sales_clip_art_5aeac22725c474_1548991015253345671547" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="347dp"
+        android:layout_height="111dp"
+        android:text="LiraRate"
+        android:textColor="#F8F5F5"
+        android:textSize="90sp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="209dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
