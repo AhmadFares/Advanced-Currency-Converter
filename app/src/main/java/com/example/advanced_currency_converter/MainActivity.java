@@ -29,39 +29,40 @@ public class MainActivity extends AppCompatActivity {
 
     public void covert(View view) {
 
-        DownloadName task = new DownloadName();
+        DownloadTask task = new DownloadTask();
         String link = "http://localhost/mobile_project/sendToDB.php?value=" + r;
         task.execute(link);
 
     }
 
-    public class DownloadName extends AsyncTask<String, Void, String> {
+    public class DownloadTask extends AsyncTask<String, Void, String> {
 
-        protected String doInBackground(String... urls) {
+        protected String doInBackground(String... urls){
             String result = "";
             URL url;
-            HttpURLConnection urlConnection;
-            try {
+            HttpURLConnection http;
+
+            try{
                 url = new URL(urls[0]);
-                urlConnection = (HttpURLConnection) url.openConnection();
-                InputStream in = urlConnection.getInputStream();
-                BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+                http = (HttpURLConnection) url.openConnection();
 
+                InputStream in = http.getInputStream();
+                InputStreamReader reader = new InputStreamReader(in);
                 int data = reader.read();
-                while (data != -1) {
 
-                    result = result + reader.readLine();
+                while( data != -1){
+                    char current = (char) data;
+                    result += current;
                     data = reader.read();
-                }
 
-                return result;
-            } catch (Exception e) {
+                }
+            }catch(Exception e){
                 e.printStackTrace();
                 return null;
             }
 
+            return result;
         }
-    }
 }
 
 
