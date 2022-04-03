@@ -8,11 +8,10 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/usd"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_orange_light"
-        android:onClick="covert"
         android:text="$ USD $"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
