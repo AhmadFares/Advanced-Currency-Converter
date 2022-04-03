@@ -10,19 +10,6 @@ $error = curl_error($ch);
 preg_match('/<strong id="buy-value">(.*)<\/strong>' , $result , $matches);
 
 print_r($matches);
-
-
-
 curl_close($ch);
 
-/*$dom = new DOMDocument;
-libxml_use_internal_errors($result);
-$dom->loadHTML($result);
-
-$tags = $dom->getElementsByTagName('selection');
-
-foreach($tags as $code) {
-	echo $code->nodeValue;
-}
-*/
 ?>
