@@ -4,10 +4,10 @@
 $ch = curl_init('https://lirarate.org/');
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-$result = curl_exec($ch);
+$response = curl_exec($ch);
 $error = curl_error($ch);
 
-preg_match('/<strong id="buy-value">(.*)<\/strong>' , $result , $matches);
+preg_match_all('/<strong id="buy-value">(.*)<\/strong>' , $response , $matches);
 
 print_r($matches);
 curl_close($ch);
